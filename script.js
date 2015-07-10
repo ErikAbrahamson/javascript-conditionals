@@ -22,9 +22,10 @@ if (postalCode.length === 5 || postalCode[5] === '-') {
 }
 
 var martialStatus = prompt('Are you married?');
-if (martialStatus == ('Yes' || 'YES' || 'yes')) {
+
+if (martialStatus.toUpperCase('yes')) {
   alert('Woot, you are married.');
-} else if (martialStatus == ('No' || 'NO' || 'no')) {
+} else if (martialStatus.toUpperCase('no')) {
   alert('Sorry to hear.');
 } else {
   alert('I can\'t tell if you\'re married. Please re-enter your martial status');
